@@ -53,7 +53,7 @@ const Agecalc = () => {
           <div className="box">
              <form action="" className='form2'>
               <div className="input">
-                <input type="date" name="date" id="date" value={birthDate} onChange={e=> setBirthDate(e.target.value)} />
+                <input type="date" name="date" id="date" value={birthDate} onChange={e=> setBirthDate(e.target.value)} placeholder='click to choose dob' />
               </div>
               <div className="button">
                 <input type="button" value="calculate Age" onClick={calculateAge} />

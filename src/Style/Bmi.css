@@ -23,7 +23,7 @@
     font-family: sans-serif;
     border-bottom: 2px solid rgb(255, 255, 255);
     /* height: 20px; */
-    width: 700px;
+    width: 300px;
     /* margin-left:400px; */
     padding-bottom: 5px;
     margin-bottom: 20px;
@@ -75,4 +75,13 @@ hr{
 }
 .outputed h3{
     padding-top: 20px;
+}
+
+@media screen and (max-width:400px) {
+    .bmicalc h1{
+        width: 400px;
+        font-size: 20px;
+        font-weight: 700;
+    }
+    
 }
