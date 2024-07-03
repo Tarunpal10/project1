@@ -1,0 +1,78 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+.bmicalc{
+    background-color: rgba(116, 164, 219, 0.598);
+    height: 90vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+
+}
+.bmicalc h1{
+    /* justify-content: center; */
+    text-align: center;
+    /* align-items: center; */
+    /* padding-top: 20px; */
+    color: rgb(20, 93, 145);
+    font-family: sans-serif;
+    border-bottom: 2px solid rgb(255, 255, 255);
+    /* height: 20px; */
+    width: 700px;
+    /* margin-left:400px; */
+    padding-bottom: 5px;
+    margin-bottom: 20px;
+
+}
+.bmicalc form{
+    height: 400px;
+    width: 400px;
+    background-color: rgba(0, 76, 255, 0.158);
+    border-radius: 20px;
+    padding-top: 20px;
+       
+}
+.bmicalc form input{
+    height: 59px;
+    width: 250px;
+    padding: 5px 10px;
+    color: white;
+}
+.bmicalc form label{
+    color: black;
+    font-weight: 650;
+    font-size: 25px;
+}
+hr{
+    margin-top: 10px;
+    /* font-size: 20px; */
+    height: 6px;
+    background-color: black;
+    border-radius: 100%;
+    border-bottom-color: blue;
+}
+.btn{
+    border: none;
+    outline: none;
+    height: 30px;
+    width: 150px;
+    font-family: sans-serif;
+    font-size: 20px;
+    font-weight: 550;
+    background-color: rgb(48, 116, 116);
+    cursor: pointer;
+    border-radius: px;
+
+}
+.outputed p{
+    font-size: 20px;
+    padding-top: 10px;
+}
+.outputed h3{
+    padding-top: 20px;
+}

@@ -1,24 +1,35 @@
-import logo from './logo.svg';
-import './App.css';
+import { useState } from "react";
+import Agecalc from "./Components/Agecalc";
+import Bmicalc from "./Components/Bmicalc";
+import Calculator from "./Components/Calculator";
+import Instrucalc from "./Components/Instrucalc";
+import Navbar from "./Components/Navbar";
+import { Routes,Route } from "react-router-dom";
+
 
 function App() {
+  const [loading , SetLoading]=useState(true)
+  const spinner= document.getElementById('spinner')
+  if(spinner){
+    setTimeout(()=>{
+        spinner.style.display='none';
+        SetLoading(false)
+    },2000)
+  }
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    !loading && (
+    <>
+    <Navbar/>
+    <Routes>
+      <Route path="/" element={<Calculator/>} />
+      <Route path="age" element={<Agecalc/>} />
+      <Route path="bmi" element={<Bmicalc/>} />
+      <Route path="instru" element={<Instrucalc/>} />
+
+
+    </Routes>
+    </>
+    )
   );
 }
 
