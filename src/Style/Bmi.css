@@ -21,9 +21,9 @@
     /* padding-top: 20px; */
     color: rgb(20, 93, 145);
     font-family: sans-serif;
-    border-bottom: 2px solid rgb(255, 255, 255);
+    border-bottom: 2px solid rgb(78, 46, 46);
     /* height: 20px; */
-    width: 300px;
+    width: 700px;
     /* margin-left:400px; */
     padding-bottom: 5px;
     margin-bottom: 20px;
@@ -79,9 +79,14 @@ hr{
 
 @media screen and (max-width:400px) {
     .bmicalc h1{
-        width: 400px;
+        width: 370px;
         font-size: 20px;
         font-weight: 700;
     }
+    .bmicalc form {
+        height: 380px;
+        width: 350px;
+    }
+   
     
 }
