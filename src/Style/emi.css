@@ -80,4 +80,8 @@
  .main button{
     width: 280px;
  }
+ .main input{
+  font-size: 18px;
+  width: 240px;
+ }
 }
